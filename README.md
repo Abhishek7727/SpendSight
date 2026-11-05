@@ -1,6 +1,6 @@
 # SpendSight — Smart AI-Powered Personal Finance & Budget Tracker
 
-> **Built with ❤️ by [Abhishek Namdev](https://github.com/abhisheknamdev)**
+> **Built with ❤️ by [Abhishek Namdev](https://github.com/Abhishek7727)**
 
 A full-stack, cross-platform personal finance and budgeting application for iOS and Android built with **Expo (SDK 54)**, **Supabase**, **Clerk Auth**, and **Google Gemini AI**. Track accounts, monitor expenses, set monthly budgets, and log transactions seamlessly through manual entry, AI receipt scanning, or voice notes — all secured with biometric authentication (Face ID / Fingerprint).
 
@@ -259,6 +259,6 @@ npx expo typecheck
 
 Developed by **Abhishek Namdev**
 
-- GitHub: [@abhisheknamdev](https://github.com/abhisheknamdev)
+- GitHub: [@abhisheknamdev](https://github.com/Abhishek7727)
 - Project: SpendSight 
 - License: MIT
