@@ -260,5 +260,5 @@ npx expo typecheck
 Developed by **Abhishek Namdev**
 
 - GitHub: [@abhisheknamdev](https://github.com/abhisheknamdev)
-- Project: SpendSight (formerly Welth)
+- Project: SpendSight 
 - License: MIT
