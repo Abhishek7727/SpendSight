@@ -1,0 +1,84 @@
+{
+  "expo": {
+    "name": "SpendSight",
+    "slug": "spendsight",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "spendsight",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.abhisheknamdev.spendsight",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
+    },
+    "android": {
+      "package": "com.abhisheknamdev.spendsight",
+      "adaptiveIcon": {
+        "backgroundColor": "#E6F4FE",
+        "foregroundImage": "./assets/images/android-icon-foreground.png",
+        "backgroundImage": "./assets/images/android-icon-background.png",
+        "monochromeImage": "./assets/images/android-icon-monochrome.png"
+      },
+      "edgeToEdgeEnabled": true,
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "output": "static",
+      "favicon": "./assets/images/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/images/splash-icon.png",
+          "imageWidth": 200,
+          "resizeMode": "contain",
+          "backgroundColor": "#ffffff",
+          "dark": {
+            "backgroundColor": "#000000"
+          }
+        }
+      ],
+      "expo-secure-store",
+      [
+        "expo-local-authentication",
+        {
+          "faceIDPermission": "Allow SpendSight to use Face ID for securing your financial data."
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Allow SpendSight to access your photos to set a profile picture or scan a receipt.",
+          "cameraPermission": "Allow SpendSight to access your camera to scan receipts."
+        }
+      ],
+      [
+        "expo-audio",
+        {
+          "microphonePermission": "Allow SpendSight to access your microphone to log transactions by voice."
+        }
+      ],
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow SpendSight to access your camera to scan receipts."
+        }
+      ],
+      "expo-asset",
+      "@clerk/expo"
+    ],
+    "experiments": {
+      "typedRoutes": true,
+      "reactCompiler": true
+    },
+    "extra": {
+      "router": {}
+    }
+  }
+}
