@@ -303,6 +303,10 @@ export default function TransactionsScreen() {
                     barWidth={6}
                     spacing={4}
                     hideYAxisText
+                    maxValue={Math.max(
+                      ...dailyIncomeExpense.map((d) => d.value),
+                      10
+                    )}
                     xAxisColor="#E8E6DF"
                     yAxisColor="transparent"
                     rulesColor="#F0EEE7"

@@ -143,7 +143,7 @@ export default function HomeScreen() {
           <View className="flex-row justify-between items-center mb-[22px]">
             <Image
               source={require("../../../assets/images/welth-light.png")}
-              style={{ width: 80, height: "100%" }}
+              style={{ width: 80, height: 30 }}
               contentFit="contain"
             />
             <View className="flex-row items-center gap-2.5">
@@ -259,10 +259,19 @@ export default function HomeScreen() {
                   <View
                     className="h-2 rounded-full"
                     style={{
-                      width: `${Math.min(
-                        Math.round((monthExpense / budget.amount) * 100),
-                        100
-                      )}%`,
+                      width: `${
+                        budget.amount > 0
+                          ? Math.min(
+                              Math.max(
+                                Math.round(
+                                  (monthExpense / budget.amount) * 100
+                                ),
+                                0
+                              ),
+                              100
+                            )
+                          : 0
+                      }%`,
                       backgroundColor:
                         monthExpense >= budget.amount
                           ? "#FF6B4A"
